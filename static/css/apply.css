@@ -1,0 +1,38 @@
+.apply-message-container {
+    max-width: 700px;
+    margin: 100px auto;
+    background-color: #CFEAF9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apply-message-container h1 {
+    color: #003459;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.apply-message-container p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.apply-message-container a {
+    color: #FA7D23;
+    text-decoration: underline;
+}
+
+.header {
+    padding: 0px 16px;
+    background: #003459;
+    color: #f1f1f1;
+    margin: 0; /* Remove any margin */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
