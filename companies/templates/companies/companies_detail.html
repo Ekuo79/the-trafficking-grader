@@ -37,6 +37,9 @@
     <div class="hold">
         <h3 id="company-title">{{company.title}}</h3>
         <div class="blue-box">
+            {% if company.logo_path %}
+                <img src="{% static company.logo_path %}" alt="{{ company.title }} logo" class="logo-overlay">
+            {% endif %}
             <h3 id="company-title">{{company.title}}</h3><h3>About</h3>
             <p id="abouttxt">{{company.about}}</p>
         </div>

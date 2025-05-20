@@ -27,6 +27,12 @@ class Companies(models.Model):
     languages = models.ManyToManyField(Language, blank=True)
     point_total = models.IntegerField(default=0)
 
+    logo_path = models.CharField(
+        max_length=255,
+        blank=True,
+        help_text="Path to logo image in static/, e.g., 'images/logos/company1.png'"
+    )
+
     def __str__(self):
         return self.title
     
