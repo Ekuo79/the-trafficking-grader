@@ -61,11 +61,7 @@
                     <h2>ID Verification</h2>
                     <div class="icons">
                         <h3>
-                            {% if company.is_id_required %}
-                            Yes
-                            {% else %}
-                            No
-                            {% endif %}
+                            empty
                         </h3>
                     </div>
                 </li>
@@ -91,16 +87,10 @@
                     <h2 style="color: #F0801F;">Pass/Fail</h2>
                     <div class="icons">
                         <h3>
-                            {% if company.grade == 'A' %}
+                            {% if company.point_total > 20 %}
                                 <img src="/static/images/checkmark-circle.png" alt="" style="width: 100%; height: 100%">
-                            {% elif company.grade == 'B' %}
-                                <img src="/static/images/checkmark-circle.png" alt="" style="width: 100%; height: 100%">
-                            {% elif company.grade == 'C' %}
+                            {% else %}
                                <img src="/static/images/Unavailable.png" alt="" style="width: 100%; height: 100%">
-                            {% elif company.grade == 'D' %}
-                                <img src="/static/images/Unavailable.png" alt="" style="width: 100%; height: 100%">
-                            {% elif company.grade == 'F' %}
-                                <img src="/static/images/Unavailable.png" alt="" style="width: 100%; height: 100%">
                             {% endif %}
                         </h3>
                     </div>

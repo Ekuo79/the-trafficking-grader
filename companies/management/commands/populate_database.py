@@ -11,6 +11,9 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         json_file_path = settings.BASE_DIR / 'static' / 'test_companies.json'
 
+        # remove previous data
+        Companies.objects.all().delete()
+
         with open(json_file_path, 'r') as json_file:
             data = json.load(json_file)
 
@@ -20,7 +23,7 @@ class Command(BaseCommand):
                     about=company_data['fields']['about'],
                     pretest=company_data['fields']['pretest'],
                     posttest=company_data['fields']['posttest'],
-                    is_id_required=company_data['fields']['is_id_required']
+                    point_total=company_data['fields'].get('point_total', 0)
                 )
                 company.save()
 
