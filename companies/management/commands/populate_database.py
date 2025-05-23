@@ -12,6 +12,8 @@ class Command(BaseCommand):
         with open(json_file_path, 'r') as json_file:
             data = json.load(json_file)
 
+            Companies.objects.all().delete()
+
             for company_data in data:
                 fields = company_data['fields']
 
@@ -22,7 +24,9 @@ class Command(BaseCommand):
                         'pretest': fields['pretest'],
                         'posttest': fields['posttest'],
                         'point_total': fields.get('point_total', 0),
-                        'logo_path': fields.get('logo_path', '')
+                        'interactive': fields.get('interactive', False),
+                        'logo_path': fields.get('logo_path', ''),
+                        'feedback': fields.get('feedback', '')
                     }
                 )
 

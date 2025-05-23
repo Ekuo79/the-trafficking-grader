@@ -26,12 +26,15 @@ class Companies(models.Model):
     posttest = models.BooleanField()    # is a posttest given?
     languages = models.ManyToManyField(Language, blank=True)
     point_total = models.IntegerField(default=0)
+    interactive = models.BooleanField(default=False)
 
     logo_path = models.CharField(
         max_length=255,
         blank=True,
         help_text="Path to logo image in static/, e.g., 'images/logos/company1.png'"
     )
+
+    feedback = models.TextField(default='')
 
     def __str__(self):
         return self.title
