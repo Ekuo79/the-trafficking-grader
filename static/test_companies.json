@@ -18,15 +18,15 @@
         "model": "companies.companies",
         "pk": 2,
         "fields": {
-          "title": "Sample company",
-          "about": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
+          "title": "Protect All Children from Trafficking",
+          "about": "PACT (Protect All Children from Trafficking) is a nonprofit organization committed to ending child sexual exploitation and trafficking. Founded in 1991 as the first U.S. group to focus on the commercial sexual exploitation of children, PACT works through education, advocacy, and global partnerships. As a member of ECPAT International, PACT operates in over 100 countries, collaborating to protect children worldwide. The organization's prevention-focused initiatives include the Y-ACT Program, CSAM Prevention Program, and TEACH Academy, all designed to equip youth, caregivers, and professionals with tools to identify and stop exploitation. A cornerstone of PACT's mission is the Survivors' Council, formed in 2017, which ensures survivor voices shape and guide all programs. Through a survivor-led, education-driven approach, PACT envisions a world where no child is bought, sold, or abused.",
           "pretest": true,
           "posttest": true,
-          "interactive": false,
-          "point_total": 25,
-          "languages": ["English"],
-          "logo_path": "/images/logos/time.jpg",
-          "feedback": "The training effectively covers a range of critical topics related to human trafficking, including definitions, signs, and legal regulations, which are essential for hotel employees. However, it lacks tailored content for different hotel employee positions, which is important for ensuring that all staff, from front desk to housekeeping, understand their specific roles and responsibilities in identifying and reporting trafficking. Incorporating position-specific scenarios and guidelines could enhance the training's relevance and effectiveness."
+          "interactive": true,
+          "point_total": 19,
+          "languages": ["Arabic", "Bengali", "Burmese", "Cebuano", "Chinese (Simplified)", "Chinese (Traditional)", "Dutch", "English", "Farsi", "French", "German", "Greek", "Gujarati", "Haitian Creole", "Hausa", "Hebrew", "Hindi", "Hmong", "Indonesian", "Italian", "Japanese", "Khmer", "Korean", "Lao", "Malay", "Pashto", "Polish", "Portuguese", "Punjabi", "Russian", "Somali", "Spanish", "Tagalog", "Thai", "Urdu", "Vietnamese"],
+          "logo_path": "/images/logos/PACT.png",
+          "feedback": "The training effectively covers several key aspects of anti-human trafficking, particularly in defining the issue and recognizing signs of trafficking. However, it lacks survivor accounts, which could provide powerful, personal insights into the experiences of victims and enhance the emotional impact of the training. Additionally, including statistics would strengthen the training by providing concrete data that highlights the prevalence and urgency of human trafficking, making the content more compelling and informative."
         }
       }
 ]

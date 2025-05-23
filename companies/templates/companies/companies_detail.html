@@ -53,9 +53,16 @@
                     <h2>Accessibility</h2>
                     <div class="icons">
                         <h3>
-                            {% for language in company.languages.all %}
-                            {{language.name}}<br />
-                            {% endfor %}
+                            {% with company.languages.all as langs %}
+                            {% if langs|length > 2 %}
+                                English<br/>
+                                {{ langs|length|add:"-1" }} more
+                            {% else %}
+                                {% for lang in langs %}
+                                {{ lang.name }}<br/>
+                                {% endfor %}
+                            {% endif %}
+                            {% endwith %}
                         </h3>
                     </div>
                 </li>
